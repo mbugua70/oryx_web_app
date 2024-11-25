@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+
+    <title>Report</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <span class="brand-logo center">ORYX LUBRICANTS SURVERY</span>
+          <a href="../index.html" class="right home-icon" id="home-el">
+            <i class="material-icons waves-effect waves-dark">home</i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="card-panel">
+        <h4>Personal Information</h4>
+        <div class="profile">
+          <div class="details">
+            <div class="user">
+              <span class="material-symbols-outlined"> person </span>
+              <span class="user_name">Name</span>
+            </div>
+            <span class="user_detail users_input" id="ba_name">
+              <div
+                class="preloader-wrapper small active preloader_element"
+                id="preloader_one"
+              >
+                <div class="spinner-layer spinner-green-only">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+          <div class="details">
+            <div class="user">
+              <span class="material-symbols-outlined"> call </span>
+              <span class="user_phone">Contact</span>
+            </div>
+            <span class="user_phones users_input" id="ba_phone">
+              <div
+                class="preloader-wrapper small active preloader_element"
+                id="preloader_one"
+              >
+                <div class="spinner-layer spinner-green-only">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+          <div class="details">
+            <div class="user">
+              <span class="material-symbols-outlined"> home_pin </span>
+              <span class="user_location">Location</span>
+            </div>
+            <span class="user_locations users_input" id="ba_location">
+              <div
+                class="preloader-wrapper small active preloader_element"
+                id="preloader_one"
+              >
+                <div class="spinner-layer spinner-green-only">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card-panel card-relative">
+        <form class="form" id="form">
+         <h4>Shop Details</h4>
+         <label for="shop_name">1. Name of the shop</label>
+         <input
+         class="input"
+         type="text"
+         class="input"
+         type="text"
+         name="shop_name"
+         id="shop_name"
+         placeholder="Enter shop name"
+         required
+         />
+         <label for="shop_contact">2. Shop contact</label>
+         <input
+         class="input"
+         type="text"
+         class="input"
+         type="tel"
+         name="shop_contact"
+         id="shop_contact"
+         placeholder="Enter shop contact"
+         required
+         />
+         <label for="shop_location">3. Shop location</label>
+         <input
+         class="input"
+         type="text"
+         class="input"
+         type="text"
+         name="shop_location"
+         id="shop_location"
+         placeholder="Enter shop location"
+         required
+         />
+         <label for="shop_landmark">4. Nearby landmark</label>
+         <input
+         class="input"
+         type="text"
+         class="input"
+         type="text"
+         name="shop_landmark"
+         id="shop_landmark"
+         placeholder="Enter nearby landmark"
+         required
+         />
+
+         <label for="competitor_products">5. Available competitor products</label>
+         <input
+         class="input"
+         type="text"
+         class="input"
+         type="text"
+         name="competitor_products"
+         id="competitor_products"
+         placeholder="Competitor products"
+         />
+
+         <label for="competitor_price">6. Price of the competitor products</label>
+         <input
+         class="input"
+         type="text"
+         class="input"
+         type="text"
+         name="competitor_price"
+         id="competitor_price"
+         placeholder="E.g 1000TZ, 200000TZ"
+         />
+
+         <!-- demographic  -->
+         <h4>Demographic</h4>
+         <label for="respondent_name">1. Name of the respondent</label>
+         <input
+           class="input"
+           type="text"
+           name="respondent_name"
+           id="respondent_name"
+           placeholder="Enter name of the respondent"
+           required
+         />
+         <label for="respondent_gender">2. Gender</label>
+         <select name="respondent_gender" id="respondent_gender" class="select_els" required>
+          <option value="">Select your gender</option>
+          <option  value="male">Male</option>
+          <option  value="female">Female</option>
+        </select>
+        <label class="">3. Location of the respondent</label>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Enter the respondent location"
+            required
+          />
+        <label for="respondent_phone_number">4. Contact Details</label>
+        <input
+          class="input"
+          type="tel"
+          name="respondent_phone_number"
+          id="respondent_phone_number"
+          placeholder="E.g 0767**"
+          required
+        />
+        <label for="respondent_wheeler">5. How many 3 wheeler or 2 wheeler per stand?</label>
+        <input
+          class="input"
+          type="text"
+          name="respondent_wheeler"
+          id="respondent_wheeler"
+          placeholder="Enter your respond"
+          required
+        />
+
+
+          <h4>Brand Category</h4>
+
+          <!-- form 2 -->
+          <label for="brand_category_1">1. What comes into your mind if you hear of the word ORYX?</label>
+          <input
+            class="input"
+            type="text"
+            name="brand_category_1"
+            id="brand_category_1"
+            placeholder="Enter your respond here"
+            required
+          />
+
+          <label for="brand_category_2">2. Have you ever used ORYX Lubricants?</label>
+          <select name="brand_category_2" id="brand_category_2"  class="select_els select_parent" required>
+            <option value="">Select your answer</option>
+            <option id="yes_user_item" value="yes">YES</option>
+            <option id="no_user_item" value="no">NO</option>
+          </select>
+        <!-- the below code to show only if the user not used it -->
+        <div id="non_user" class="mt-tops">
+          <label for="brand_category_2_a"
+            >2a. If not, Why?  and  are you willing to use?</label>
+          <input
+            class="input authonticate_values"
+            type="text"
+            name="brand_category_2_a"
+            id="brand_category_2_a"
+            placeholder="Enter  your respond"
+          />
+          <label for="brand_category_3"
+            >3. To non-users, Which brand of lubricants are you using?</label
+          >
+          <input
+            class="input authonticate_values"
+            type="text"
+            name="brand_category_3"
+            id="brand_category_3"
+            placeholder="Enter  your respond"
+          />
+        </div>
+
+          <!-- to show if the answer was yes -->
+         <div id="user_yes" class="mt-tops">
+          <label for="brand_category_2_b">2b. If yes, Mention one product from ORYX that you normally use?</label>
+          <input
+            class="input authonticate_values"
+            type="text"
+            name="brand_category_2_b"
+            id="brand_category_2_b"
+            placeholder="Enter your respond"
+          />
+         </div>
+          <label for="brand_category_4">4. What do you like from the brand you are currently using?</label>
+          <input
+            class="input"
+            type="text"
+            name="brand_category_4"
+            id="brand_category_4"
+            placeholder="Enter your respond"
+            required
+          />
+          <label for="brand_category_5">5. For how long have you be using the brand?</label>
+          <input
+            class="input"
+            type="text"
+            name="brand_category_5"
+            id="brand_category_5"
+            placeholder="E.g 2 years, 4 months"
+            required
+          />
+          <label  for="brand_category_6">6. How did you come to choosing the brand you are currently using?</label>
+          <select name="brand_category_6" id="brand_category_6"  class="select_els select_parent" required>
+            <option value="">Select your answer</option>
+            <option value="Recommended by a friend">Recommended by a friend</option>
+            <option value="Found online search  ">Found online search</option>
+            <option value="Saw an advert">Saw an advert</option>
+            <option value="Social media">Social media</option>
+            <option value="Visited a physical store">Visited a physical store</option>
+            <option id="water_bottle" value="Other">Other</option>
+          </select>
+
+          <div class="mt-tops" id="specify_user">
+            <label  for="brand_category_7">Please specify</label>
+          <input
+            class="input authonticate_values"
+            type="text"
+            name="brand_category_7"
+            id="brand_category_7"
+            placeholder="Enter your respond"
+          />
+          </div>
+          <label  for="brand_category_8">7. What other names of the lubricants brands do you remember?</label>
+          <input
+            class="input"
+            type="text"
+            name="brand_category_8"
+            id="brand_category_8"
+            placeholder="Enter your respond"
+            required
+          />
+          <label  for="brand_category_9">8. How often do you change your oil on the 3wheeler or 2wheeler?</label>
+          <input
+            class="input"
+            type="text"
+            name="brand_category_9"
+            id="brand_category_9"
+            placeholder="E.g daily weekly yearly"
+            required
+          />
+          <!-- form 3 -->
+          <h4>Distribution Awareness</h4>
+          <label for="distribution_9">9. Where do you purchase your lubricants?</label>
+          <input
+            class="input"
+            type="text"
+            name="distribution_9"
+            id="distribution_9"
+            placeholder="Enter your respond"
+            required
+          />
+          <label for="distribution_10">10. Do they provide services or just selling the product?</label>
+          <select name="distribution_10" id="distribution_10"  class="select_els" required>
+            <option value="">Select your answer </option>
+            <option value="selling the product">Selling the product</option>
+            <option value="provide the services">Provide the services</option>
+          </select>
+
+          <h4>Area Of Services</h4>
+          <label for="area_of_service_11">11. Where do you service your Boda Boda or Bajaj?</label>
+          <input
+            class="input"
+            type="text"
+            name="area_of_service_11"
+            id="area_of_service_11"
+            placeholder="Enter your respond"
+            required
+          />
+          <label for="area_of_service_12">12. The oil brand that you use, is it decided by you or the mechanic?</label>
+          <select name="area_of_service_12" id="area_of_service_12"  class="select_els select_parent" required>
+            <option value="">Select your answer </option>
+            <option value="By me">By me</option>
+            <option id="mechanic_item" value="By mechanic">By mechanic</option>
+          </select>
+        <div class="mt-tops" id="mechanic_users">
+          <label for="area_of_service_13">13. Does the mechanic sell the lubricants at his store?</label>
+          <select name="area_of_service_13" id="area_of_service_13"  class="select_els authonticate_values">
+            <option value="">Select your answer </option>
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
+          </select>
+        </div>
+
+         <h4>Media Consuption</h4>
+
+          <label for="media_consumption_14">14. Have you ever heard of any lubricant radio or TV adverts?</label>
+          <select name="media_consumption_14" id="media_consumption_14"  class="select_els select_parent" required>
+            <option value="">Select your answer</option>
+            <option id="yes_advert" value="yes">YES</option>
+            <option id="no_advert" value="no">NO</option>
+          </select>
+
+          <!-- div holding all the answer if the answer is yes -->
+          <div id="tv_adverts" class="mt-tops">
+            <label for="media_consumption_15">15. In which Radio or TV station have you heard or seen the advert?</label>
+            <input
+              class="input authonticate_values"
+              type="text"
+              name="media_consumption_15"
+              id="media_consumption_15"
+              placeholder="Enter your respond"
+            />
+            <label for="media_consumption_16">16. Can you recall the advert name or offer attached to the Adverts?</label>
+            <input
+              class="input authonticate_values"
+              type="text"
+              name="media_consumption_16"
+              id="media_consumption_16"
+              placeholder="Enter your respond"
+            />
+            <label for="media_consumption_17">17. Which brand was the advert about?</label>
+            <input
+              class="input authonticate_values"
+              type="text"
+              name="media_consumption_17"
+              id="media_consumption_17"
+              placeholder="Enter your respond"
+            />
+          </div>
+          <button class="btn-large" id="hide_icons">
+            submit <i class="material-icons" id="buttonSubmit_icon">send</i>
+            <div class="preloader-wrapper icon-submit active" id="preloader_icon_three">
+              <div class="spinner-layer spinner-green-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                  <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/sweet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js" integrity="sha256-mW1wrhuKp2Cl0DCVr/7+GTdl168ZrmB6FayoMAlSmH0=" crossorigin="anonymous"></script>
+    <!-- <script src="../nav/home.js"></script> -->
+    <script src="../nav/localUpload.js"></script>
+    <script src="../nav/formReport.js"></script>
+    <script src="../nav/location.js"></script>
+  </body>
+</html>
